@@ -19,7 +19,11 @@ from api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/findStoreByName', views.findStoreByName),
+    path('api/findStoreByPicture', views.findStoreByPicture),
+    path('api/getStore/', views.getStore),
+    path('api/lineMessage/', views.lineMessage),
+
     path('api/', views.index),
     path('api/create/', views.create),
-    path('api/lineMessage/', views.lineMessage),
 ]
