@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+i74hjnrj1tum2oh1fm2)8y!*n7yi*9_aw&o3ka(-%72qjur%4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://boknoi-k6yrbjd72a-as.a.run.app', '*']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -128,7 +128,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-    'boknoi-k6yrbjd72a-as.a.run.app',
+    'http://boknoi-k6yrbjd72a-as.a.run.app',
     'http://localhost:8080',
     'http://192.168.175.149:8080',
     'https://boknoi.web.app',
@@ -163,8 +163,7 @@ CSRF_ALLOWED_ORIGINS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    '*',
-    'boknoi-k6yrbjd72a-as.a.run.app',
+    'https://boknoi-k6yrbjd72a-as.a.run.app',
     'https://boknoi.web.app',
     'https://boknoi.firebaseapp.com'
 ]
