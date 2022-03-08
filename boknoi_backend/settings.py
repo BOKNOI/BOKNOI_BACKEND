@@ -157,11 +157,13 @@ CORS_ALLOW_HEADERS = [
 ]
 
 CSRF_ALLOWED_ORIGINS = [
+    'boknoi-k6yrbjd72a-as.a.run.app',
     'boknoi.web.app',
     'boknoi.firebaseapp.com'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
+    '*',
     'boknoi-k6yrbjd72a-as.a.run.app',
     'https://boknoi.web.app',
     'https://boknoi.firebaseapp.com'
